@@ -58,7 +58,7 @@ no return value.
 
 
 ## 3. Requirements
-- UIKit, Foundation, CoreGraphics, QuartzCore, ImageIO, MessageUI
+- ImageIO, MessageUI
 
 
 ## 4. Version History
