@@ -23,32 +23,69 @@
 		<header-file src="src/ios/PDFViewer.h" />
 		<source-file src="src/ios/PDFViewer.m" />
 
-		<!-- Common header files -->
-		<header-file src="src/ios/Reader/Common/CGPDFDocument.h" />
-		<header-file src="src/ios/Reader/Common/CGPDFDocument.h" />
-		<header-file src="src/ios/Reader/Common/ReaderConstants.h" />
-		<header-file src="src/ios/Reader/Common/ReaderContentPage.h" />
-		<header-file src="src/ios/Reader/Common/ReaderContentTile.h" />
-		<header-file src="src/ios/Reader/Common/ReaderContentView.h" />
-		<header-file src="src/ios/Reader/Common/ReaderDocument.h" />
-		<header-file src="src/ios/Reader/Common/ReaderDocumentOutline.h" />
-		<header-file src="src/ios/Reader/Common/ReaderMainPagebar.h" />
-		<header-file src="src/ios/Reader/Common/ReaderMainToolbar.h" />
-		<header-file src="src/ios/Reader/Common/ReaderThumbCache.h" />
-		<header-file src="src/ios/Reader/Common/ReaderThumbFetch.h" />
-		<header-file src="src/ios/Reader/Common/ReaderThumbQueue.h" />
-		<header-file src="src/ios/Reader/Common/ReaderThumbRender.h" />
-		<header-file src="src/ios/Reader/Common/ReaderThumbRequest.h" />
-		<header-file src="src/ios/Reader/Common/ReaderThumbsView.h" />
-		<header-file src="src/ios/Reader/Common/ReaderThumbView.h" />
-		<header-file src="src/ios/Reader/Common/ReaderViewController.h" />
-		<header-file src="src/ios/Reader/Common/ThumbsMainToolbar.h" />
-		<header-file src="src/ios/Reader/Common/ThumbsViewController.h" />
-		<header-file src="src/ios/Reader/Common/UIXToolbarView.h" />
+		<header-file src="src/ios/Reader/Common/CGPDFDocument.h" target-dir="Common"/>
+		<header-file src="src/ios/Reader/Common/ReaderConstants.h" target-dir="Common"/>
+		<header-file src="src/ios/Reader/Common/ReaderContentPage.h" target-dir="Common"/>
+		<header-file src="src/ios/Reader/Common/ReaderContentTile.h" target-dir="Common"/>
+		<header-file src="src/ios/Reader/Common/ReaderContentView.h" target-dir="Common"/>
+		<header-file src="src/ios/Reader/Common/ReaderDocument.h" target-dir="Common"/>
+		<header-file src="src/ios/Reader/Common/ReaderDocumentOutline.h" target-dir="Common"/>
+		<header-file src="src/ios/Reader/Common/ReaderMainPagebar.h" target-dir="Common"/>
+		<header-file src="src/ios/Reader/Common/ReaderMainToolbar.h" target-dir="Common"/>
+		<header-file src="src/ios/Reader/Common/ReaderThumbCache.h" target-dir="Common"/>
+		<header-file src="src/ios/Reader/Common/ReaderThumbFetch.h" target-dir="Common"/>
+		<header-file src="src/ios/Reader/Common/ReaderThumbQueue.h" target-dir="Common"/>
+		<header-file src="src/ios/Reader/Common/ReaderThumbRender.h" target-dir="Common"/>
+		<header-file src="src/ios/Reader/Common/ReaderThumbRequest.h" target-dir="Common"/>
+		<header-file src="src/ios/Reader/Common/ReaderThumbView.h" target-dir="Common"/>
+		<header-file src="src/ios/Reader/Common/ReaderThumbsView.h" target-dir="Common"/>
+		<header-file src="src/ios/Reader/Common/ReaderViewController.h" target-dir="Common"/>
+		<header-file src="src/ios/Reader/Common/ThumbsMainToolbar.h" target-dir="Common"/>
+		<header-file src="src/ios/Reader/Common/ThumbsViewController.h" target-dir="Common"/>
+		<header-file src="src/ios/Reader/Common/UIXToolbarView.h" target-dir="Common"/>
+
+		<source-file src="src/ios/Reader/Common/CGPDFDocument.m" target-dir="Common"/>
+		<source-file src="src/ios/Reader/Common/ReaderConstants.m" target-dir="Common"/>
+		<source-file src="src/ios/Reader/Common/ReaderContentPage.m" target-dir="Common"/>
+		<source-file src="src/ios/Reader/Common/ReaderContentTile.m" target-dir="Common"/>
+		<source-file src="src/ios/Reader/Common/ReaderContentView.m" target-dir="Common"/>
+		<source-file src="src/ios/Reader/Common/ReaderDocument.m" target-dir="Common"/>
+		<source-file src="src/ios/Reader/Common/ReaderDocumentOutline.m" target-dir="Common"/>
+		<source-file src="src/ios/Reader/Common/ReaderMainPagebar.m" target-dir="Common"/>
+		<source-file src="src/ios/Reader/Common/ReaderMainToolbar.m" target-dir="Common"/>
+		<source-file src="src/ios/Reader/Common/ReaderThumbCache.m" target-dir="Common"/>
+		<source-file src="src/ios/Reader/Common/ReaderThumbFetch.m" target-dir="Common"/>
+		<source-file src="src/ios/Reader/Common/ReaderThumbQueue.m" target-dir="Common"/>
+		<source-file src="src/ios/Reader/Common/ReaderThumbRender.m" target-dir="Common"/>
+		<source-file src="src/ios/Reader/Common/ReaderThumbRequest.m" target-dir="Common"/>
+		<source-file src="src/ios/Reader/Common/ReaderThumbView.m" target-dir="Common"/>
+		<source-file src="src/ios/Reader/Common/ReaderThumbsView.m" target-dir="Common"/>
+		<source-file src="src/ios/Reader/Common/ReaderViewController.m" target-dir="Common"/>
+		<source-file src="src/ios/Reader/Common/ThumbsMainToolbar.m" target-dir="Common"/>
+		<source-file src="src/ios/Reader/Common/ThumbsViewController.m" target-dir="Common"/>
+		<source-file src="src/ios/Reader/Common/UIXToolbarView.m" target-dir="Common"/>
+
+		<resource-file src="src/ios/Reader/Graphics/Reader-Button-H.png"/>
+		<resource-file src="src/ios/Reader/Graphics/Reader-Button-H@2x.png"/>
+		<resource-file src="src/ios/Reader/Graphics/Reader-Button-N.png"/>
+		<resource-file src="src/ios/Reader/Graphics/Reader-Button-N@2x.png"/>
+		<resource-file src="src/ios/Reader/Graphics/Reader-Email.png"/>
+		<resource-file src="src/ios/Reader/Graphics/Reader-Email@2x.png"/>
+		<resource-file src="src/ios/Reader/Graphics/Reader-Export.png"/>
+		<resource-file src="src/ios/Reader/Graphics/Reader-Export@2x.png"/>
+		<resource-file src="src/ios/Reader/Graphics/Reader-Mark-N.png"/>
+		<resource-file src="src/ios/Reader/Graphics/Reader-Mark-N@2x.png"/>
+		<resource-file src="src/ios/Reader/Graphics/Reader-Mark-Y.png"/>
+		<resource-file src="src/ios/Reader/Graphics/Reader-Mark-Y@2x.png"/>
+		<resource-file src="src/ios/Reader/Graphics/Reader-Print.png"/>
+		<resource-file src="src/ios/Reader/Graphics/Reader-Print@2x.png"/>
+		<resource-file src="src/ios/Reader/Graphics/Reader-Thumbs.png"/>
+		<resource-file src="src/ios/Reader/Graphics/Reader-Thumbs@2x.png"/>
 
 		<!-- System frameworks -->
-		<framework src="ImageIO.framework" weak="true" />
-		<framework src="MessageUI.framework" weak="true" />
+		<framework src="ImageIO.framework" />
+		<framework src="MessageUI.framework" />
+		<framework src="QuartzCore.framework" />
 
 	</platform>
 </plugin>
