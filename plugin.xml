@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="at.mindstorm.cordova.pdfviewer" version="1.1.0">
+	<name>PDFViewer</name>
+	<author>Paul Cervenka</author>
+	<description>Cordova PDF Viewer Plugin</description>
+	<keywords>pdf, viewer</keywords>
+
+	<engines>
+		<engine name="cordova" version=">=3.0.0" />
+	</engines>
+
+	<js-module src="www/pdfviewer.js" name="PDFViewer">
+		<clobbers target="pdfviewer" />
+	</js-module>
+
+	<platform name="ios">
+		<config-file target="config.xml" parent="/*">
+			<feature name="PDFViewer">
+				<param name="ios-package" value="PDFViewer" />
+			</feature>
+		</config-file>
+
+		<header-file src="src/ios/PDFViewer.h" />
+		<source-file src="src/ios/PDFViewer.m" />
+
+		<!-- Common header files -->
+		<header-file src="src/ios/Reader/Common/CGPDFDocument.h" />
+		<header-file src="src/ios/Reader/Common/CGPDFDocument.h" />
+		<header-file src="src/ios/Reader/Common/ReaderConstants.h" />
+		<header-file src="src/ios/Reader/Common/ReaderContentPage.h" />
+		<header-file src="src/ios/Reader/Common/ReaderContentTile.h" />
+		<header-file src="src/ios/Reader/Common/ReaderContentView.h" />
+		<header-file src="src/ios/Reader/Common/ReaderDocument.h" />
+		<header-file src="src/ios/Reader/Common/ReaderDocumentOutline.h" />
+		<header-file src="src/ios/Reader/Common/ReaderMainPagebar.h" />
+		<header-file src="src/ios/Reader/Common/ReaderMainToolbar.h" />
+		<header-file src="src/ios/Reader/Common/ReaderThumbCache.h" />
+		<header-file src="src/ios/Reader/Common/ReaderThumbFetch.h" />
+		<header-file src="src/ios/Reader/Common/ReaderThumbQueue.h" />
+		<header-file src="src/ios/Reader/Common/ReaderThumbRender.h" />
+		<header-file src="src/ios/Reader/Common/ReaderThumbRequest.h" />
+		<header-file src="src/ios/Reader/Common/ReaderThumbsView.h" />
+		<header-file src="src/ios/Reader/Common/ReaderThumbView.h" />
+		<header-file src="src/ios/Reader/Common/ReaderViewController.h" />
+		<header-file src="src/ios/Reader/Common/ThumbsMainToolbar.h" />
+		<header-file src="src/ios/Reader/Common/ThumbsViewController.h" />
+		<header-file src="src/ios/Reader/Common/UIXToolbarView.h" />
+
+		<!-- System frameworks -->
+		<framework src="ImageIO.framework" weak="true" />
+		<framework src="MessageUI.framework" weak="true" />
+
+	</platform>
+</plugin>
