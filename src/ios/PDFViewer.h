@@ -28,7 +28,7 @@
 #import <Cordova/CDV.h>
 #import "ReaderViewController.h"
 
-@interface CDVPDFViewer : CDVPlugin <ReaderViewControllerDelegate>
+@interface PDFViewer : CDVPlugin <ReaderViewControllerDelegate>
 
 - (void)openPDF:(CDVInvokedUrlCommand*)command;
 
